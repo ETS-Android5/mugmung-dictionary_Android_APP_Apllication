@@ -59,7 +59,7 @@ public class WettabFragment extends Fragment {
 
         arrayList = new ArrayList<>();//model 객체를 담을 리스트
 
-        // query = FirebaseDatabase.getInstance().getReference().child("HollysDrink").child("Coffee").orderByChild("drinkname");
+
 
         Bundle extra = this.getArguments();
 
@@ -67,7 +67,6 @@ public class WettabFragment extends Fragment {
 
         if(extra != null){
             extra=getArguments();
-            // String porkcheck = extra.getString("pork");
         }
 
         final Button btn = (Button) view.findViewById(R.id.wetbutton);

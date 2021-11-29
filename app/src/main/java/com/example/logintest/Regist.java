@@ -389,10 +389,7 @@ public class Regist extends AppCompatActivity {
 
         float[][][][] input = new float[1][64][64][3];
         float[][] output = new float[1][15]; //종류 3개
-        //float[] output= new float[3];
 
-        //dogimage = findViewById(R.id.imageView);
-        // dogtype = findViewById(R.id.txttype);
         int i;
 
 
@@ -400,13 +397,10 @@ public class Regist extends AppCompatActivity {
             int batchNum = 0;
             InputStream buf = getContentResolver().openInputStream(data.getData());
             Bitmap bitmap = BitmapFactory.decodeStream(buf);
-            // bitmap = Bitmap.createScaledBitmap(bitmap,64,64,true); //
             buf.close();
 
 
-            //ImageView iv = findViewById(R.id.imageView);
-            //  iv.setScaleType(ImageView.ScaleType.FIT_XY);
-            //  iv.setImageBitmap(bitmap);
+
 
             // x,y 최댓값 사진 크기에 따라 달라짐 (조절 해줘야함)
             for (int x = 0; x < 64; x++) {
@@ -430,66 +424,6 @@ public class Regist extends AppCompatActivity {
             e.printStackTrace();
         }
 
-       /* for (i = 0; i < 3; i++) {
-            if (output[0][i] * 100 > 90) {
-                if (i == 0) {
-                    dogtype.setText(String.format("golden,  %d, %.5f", i, output[0][0] * 100));
-                } else if (i == 1) {
-                    dogtype.setText(String.format("maltise, %d , %.5f", i, output[0][1] * 100));
-                } else {
-                    dogtype.setText(String.format("pome, %d, %.5f", i, output[0][2] * 100));
-                }
-            } else
-                continue;
-        }*/
-
-
-      /*  if(output[0][0]>0.8){
-            dogtype.setText(String.format("비글"));
-        }
-        else if(output[0][1]>0.8){
-            dogtype.setText(String.format("비숑"));
-        }
-        else if(output[0][2]>0.8){
-            dogtype.setText(String.format("치와와"));
-        }
-        else if(output[0][3]>0.8){
-            dogtype.setText(String.format("닥스훈트"));
-        }
-        else if(output[0][4]>0.8){
-            dogtype.setText(String.format("달마시안"));
-        }
-        else if(output[0][5]>0.8){
-            dogtype.setText(String.format("도베르만"));
-        }
-        else if(output[0][6]>0.8){
-            dogtype.setText(String.format("골든 리트리버"));
-        }
-        else if(output[0][7]>0.8){
-            dogtype.setText(String.format("시베리아 허스키"));
-        }
-        else if(output[0][8]>0.8){
-            dogtype.setText(String.format("말티즈"));
-        }
-        else if(output[0][9]>0.8){
-            dogtype.setText(String.format("포메라니안"));
-        }
-        else if(output[0][10]>0.8){
-            dogtype.setText(String.format("푸들"));
-        }
-
-        else if(output[0][12]>0.8){
-            dogtype.setText(String.format("슈나우저"));
-        }
-        else if(output[0][13]>0.8){
-            dogtype.setText(String.format("시바견"));
-        }
-        else {
-            dogtype.setText(String.format("웰시코기"));
-        }*/
-
-        /*dogtype.setText(String.format("%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f",output[0][0],output[0][1],output[0][2],output[0][3],output[0][4],output[0][5],output[0][6],
-                output[0][7],output[0][8],output[0][9],output[0][10],output[0][11],output[0][12],output[0][13],output[0][14]));*/
          for (i = 0; i < 15; i++)
             if (output[0][i] * 100 > 50) {
                 if (i == 0) {

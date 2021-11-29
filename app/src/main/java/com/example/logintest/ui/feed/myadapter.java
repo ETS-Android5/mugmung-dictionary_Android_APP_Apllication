@@ -27,7 +27,6 @@ public class myadapter extends FirebaseRecyclerAdapter<model, myadapter.myviewho
     protected void onBindViewHolder(@NonNull myviewholder holder , int position , @NonNull final model model) {
         holder.nametext.setText ( model.getName () );
         holder.brandtext.setText ( model.getBrand () );
-        //holder.ingredienttext.setText ( model.getIngredient () );
 
 
 
@@ -61,7 +60,6 @@ public class myadapter extends FirebaseRecyclerAdapter<model, myadapter.myviewho
             img1 = itemView.findViewById ( R.id.img1 );
             nametext = itemView.findViewById ( R.id.nametext );
             brandtext = itemView.findViewById ( R.id.brandtext );
-            //ingredienttext = itemView.findViewById ( R.id.ingredienttext );
         }
     }
 }

@@ -24,9 +24,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Tensor flow 모델을 이용한 이미지 분류 class
- */
 public class ImageClassifier {
 
     /**
