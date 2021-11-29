@@ -8,43 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:382207480872:android:e69e6f210810835b1f511d",
-        "android_client_info": {
-          "package_name": "com.android.mungmung_dictionary"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "382207480872-gsh7ube32d11jte8tpt6a1tomb404stm.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.android.mungmung_dictionary",
-            "certificate_hash": "cd0cd152319e266b4c73a8a88070012867963519"
-          }
-        },
-        {
-          "client_id": "382207480872-qcuiiicccdepq83ghmfd6vi6bo6ogton.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB9OHjr6Rci5Rn1cUHJ5Epj25u0_xG2a8I"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "382207480872-qcuiiicccdepq83ghmfd6vi6bo6ogton.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:382207480872:android:ac3d71fbfc0dabd81f511d",
         "android_client_info": {
           "package_name": "com.example.logintest"
