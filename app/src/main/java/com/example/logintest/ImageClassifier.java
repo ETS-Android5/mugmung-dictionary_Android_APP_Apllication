@@ -86,7 +86,7 @@ public class ImageClassifier {
          *  이미지 분류 TensorFlow Lite 모델 불러오기
          */
         MappedByteBuffer classifierModel = FileUtil.loadMappedFile(activity,
-                "model13.tflite");
+                "model10.tflite");
         // labels.txt 파일 불러오기
         labels = FileUtil.loadLabels(activity, "labels.txt");
 
