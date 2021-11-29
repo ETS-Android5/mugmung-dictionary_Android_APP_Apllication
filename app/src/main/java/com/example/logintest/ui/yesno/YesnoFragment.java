@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
@@ -18,7 +17,7 @@ import android.widget.Button;
 
 import com.example.logintest.BottomActivity;
 import com.example.logintest.R;
-import com.example.logintest.test;
+import com.example.logintest.Realtime_Recognition_yolo;
 import com.google.android.material.tabs.TabLayout;
 
 import org.jetbrains.annotations.NotNull;
@@ -73,7 +72,7 @@ public class YesnoFragment extends Fragment {
         feed_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), test.class);
+                Intent intent=new Intent(getActivity(), Realtime_Recognition_yolo.class);
                 startActivity(intent);
             }
         });

@@ -90,18 +90,12 @@ public class MyFragment extends Fragment {
         email = rootview.findViewById(R.id.emailEt);
         carecheck = rootview.findViewById(R.id.care);
         mungname = rootview.findViewById(R.id.mungname);
-
         Dataref  = FirebaseDatabase.getInstance().getReference("Users");
-        // String key = Dataref.push().getKey();
-
-        //FirebaseUser user = mAuth.getCurrentUser();
         String uid = user.getUid();
 
         Bundle extra = this.getArguments();
 
-        // layout = rootview.findViewById(R.id.layoutppp);
 
-        // String idsz = extra.getString("id");
         if(extra != null) {
             extra = getArguments();
             String title = extra.getString("type");
@@ -130,17 +124,10 @@ public class MyFragment extends Fragment {
             email.setText(email2);
             carecheck.setText(check);
             name.setText(dogname);
-            // Glide.with (getContext ()).load ( purl ).into ( dogimage );
-
 
             Toast.makeText(getActivity(),title+age+time,Toast.LENGTH_SHORT).show();
         }
 
-        // FirebaseUser user = mAuth.getCurrentUser();
-        // String uid = user.getUid();
-        //String email = user.getEmail();
-
-        //  call=FirebaseDatabase.getInstance().getReference();
         mDatabase.child("Users").child(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
@@ -206,16 +193,12 @@ public class MyFragment extends Fragment {
                         name.setText(name2);
                         mungname.setText(name2);
 
-                        // String neu = snap.child("dog_neu").getValue(String.class);
-
                         if(breed.equals("골든 리트리버")){
-                            // layout = (FrameLayout) inflater.inflate(R.layout.goldenchacracter,rootview,false);
-                            // transaction.replace(R.id.frame_layout, feedFragment).commitAllowingStateLoss();
-                            //layout.findViewById(R.id.goldencharacter);
+
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                             inflater.inflate(R.layout.goldenchacracter,contentsLayout,true);
-                            //mungname.setText("골든");
+
                         }
                         else if(breed.equals("말티즈")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
@@ -287,8 +270,7 @@ public class MyFragment extends Fragment {
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                             inflater.inflate(R.layout.beaglecharac,contentsLayout,true);
                         }
-                        //FirebaseStorage storage = FirebaseStorage.getInstance("gs://resgi-147d5.appspot.com");
-                        //StorageReference storageRef = storage.getReference();
+
                         storageRef.child("dogImage").child(uid+".jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {

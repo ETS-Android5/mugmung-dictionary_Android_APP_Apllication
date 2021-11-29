@@ -50,12 +50,6 @@ public class recfragment extends Fragment {
         recview = (RecyclerView)view.findViewById ( R.id.recview );
         recview.setLayoutManager ( new LinearLayoutManager ( getContext () ) );
 
-    /*    TextView textView ;
-        textView = view.findViewById(R.id.textView);
-       // textView.setText(FirebaseDatabase.getInstance ().getReference ().child ( "Dry" ).orderByChild("salmon").equalTo("yes"));
-        Query query ;
-        query = FirebaseDatabase.getInstance ().getReference ().child ( "Dry" ).orderByChild("salmon").equalTo("yes");
-        textView.setText(query.toString()); */
 
         Bundle extra = this.getArguments();
 
@@ -63,26 +57,21 @@ public class recfragment extends Fragment {
 
         if(extra != null){
             extra=getArguments();
-            // String porkcheck = extra.getString("pork");
         }
-       /* FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery( FirebaseDatabase.getInstance ().getReference ().child ( "Dry" ).orderByChild("salmon").equalTo("yes") , model.class)
-                        .build();*/
+
 
         mDatabase.child("Users").child(uid).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
 
                 if (snapshot != null && snapshot.exists()) {
-                    //Log.d(TAG, "Current data: " + snapshot.getData());
+
 
                     if (snapshot.getChildren() != null) {
-                        //for (DataSnapshot snap : snapshot.getChildren()) {{
+
                         String pork = snapshot.child("pork").getValue(String.class);
                         String beef = snapshot.child("beef").getValue(String.class);
 
-                        //textView.setText(check);
 
                         if(pork.equals("돼지고기")){
                             FirebaseRecyclerOptions<model> options =
@@ -117,33 +106,9 @@ public class recfragment extends Fragment {
 
             }
         });
-       /* FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery( FirebaseDatabase.getInstance ().getReference ().child ( "Dry" ).orderByChild("salmon").equalTo("yes") , model.class)
-                        .build();*/
-
-
-
-        // adpter = new myadapter ( options );
-        //recview.setAdapter ( adpter );
-
-
-
 
         return view;
     }
-
-   /* @Override
-    public void onStart() {
-        super.onStart ();
-       // adpter.startListening ();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop ();
-       // adpter.stopListening ();
-    }*/
 
 
 }

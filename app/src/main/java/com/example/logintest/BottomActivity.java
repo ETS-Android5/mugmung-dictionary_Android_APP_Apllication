@@ -45,7 +45,6 @@ public class BottomActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frame_layout, homeFragment).commitAllowingStateLoss();
 
-
         // 메뉴 아이템이 선택될때 호출될 리스너 등록
         // home, heart, person, star, drink 다섯가지 fragment
         navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -62,9 +61,7 @@ public class BottomActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.navigation_feed: {
-                      //  setContentView ( R.layout.feed_main );
-                        //getWindow ().setFlags ( WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN );
-                       // getSupportFragmentManager ().beginTransaction ().replace ( R.id.wrapper , feedFragment ).commit ();
+
                         transaction.replace(R.id.frame_layout, feedFragment).commitAllowingStateLoss();
                         break;
                     }

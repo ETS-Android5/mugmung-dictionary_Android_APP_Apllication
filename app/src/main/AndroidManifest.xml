@@ -42,10 +42,10 @@
         android:roundIcon="@mipmap/ic_launcher_mung4_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Logintest">
-        <activity android:name=".ocrtest"></activity>
+        <activity
+            android:name=".Realtime_Recognition_yolo"
+            android:exported="false" />
         <activity android:name=".FeedActivity" />
-        <activity android:name=".ocr" />
-        <activity android:name=".test" />
         <activity
             android:name=".BottomActivity"
             android:label="@string/title_activity_bottom" />
@@ -60,7 +60,6 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Theme.Logintest" />
-
     </application>
 
 </manifest>

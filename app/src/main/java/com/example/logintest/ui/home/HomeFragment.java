@@ -1,52 +1,29 @@
 package com.example.logintest.ui.home;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
-import androidx.loader.app.LoaderManager;
-import androidx.loader.content.CursorLoader;
-import androidx.loader.content.Loader;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.logintest.BottomActivity;
+import com.example.logintest.OCR_Process;
 import com.example.logintest.R;
 import com.example.logintest.databinding.FragmentHomeBinding;
-import com.example.logintest.ocr;
-import com.example.logintest.test;
-import com.example.logintest.ui.yesno.model2;
-import com.example.logintest.ui.yesno.myadapter2;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,7 +66,7 @@ public class HomeFragment extends Fragment{
         btn_ocr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), ocr.class);
+                Intent intent=new Intent(getActivity(), OCR_Process.class);
                 startActivity(intent);
             }
         });
@@ -108,7 +85,6 @@ public class HomeFragment extends Fragment{
 
         //home recyclerview
         recview = (RecyclerView)view.findViewById ( R.id.Homerecview );
-      //  recview.setLayoutManager ( new LinearLayoutManager ( getContext () ) );
         recview.setLayoutManager(layoutManager);
 
         FirebaseRecyclerOptions<model3> options =
