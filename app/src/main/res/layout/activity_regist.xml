@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Regist">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18px"
+        android:layout_marginTop="10dp"
+        android:text="아래 이미지를 클릭하여 반려견의 이미지를 등록해주세요."
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_gravity="center"
+        android:layout_height="64dp"
+        android:layout_marginTop="7dp"
+        android:src ="@drawable/puppy" />
+    <TextView
+        android:id="@+id/txttype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="50px"
+        android:layout_marginTop="10dp"
+        android:text="강아지 종"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+   <!-- <ListView
+        android:id="@+id/lv_probabilities"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+
+    </ListView> -->
+
+
+    <EditText
+        android:id="@+id/dog_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:hint="나이"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <EditText
+        android:id="@+id/dog_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:hint="몸무게"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <EditText
+        android:id="@+id/nameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="name"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <EditText
+        android:id="@+id/passwordEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <EditText
+        android:id="@+id/passwordcheckEdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password check"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="10dp"
+        android:text="*알레르기를 선택해주세요(중복선택 불가)*"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/porkck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돼지고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/beefck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/chickenck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닭고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="양고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="토끼고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물고기"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="유제품"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탄수화물"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과일"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="채소"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="콩"
+            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register2_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="가입하기"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="8dp"
+        android:text="가입하기를 누르시면 로그인 화면으로 전환됩니다."
+        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+</LinearLayout>

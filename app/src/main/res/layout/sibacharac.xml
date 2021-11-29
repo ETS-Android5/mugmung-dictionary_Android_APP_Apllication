@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sibacharac">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="슬개골"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:textAlignment="inherit"
+                        android:text="특성상 슬개골 탈구가 자주 발생하며 집안 구석구석에 매트를 깔아놓는 등 관절 건강에 각별히 신경을 써야합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="공격성"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="공격성이 강한 견종으로서 다른 개들과 만났을 때는 통제를 잘 해주는 것이 중요합니다. 천천히 다른 개들에게 익숙해지게 해야합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac"/>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="털"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="털이 길고 곱슬거리는 특성 상 속털이 잘 엉킬 수 있으니 브러싱을 자주 해 주어야 합니다. 또한 귓속에 털이 많아 귓병에 쉽게 걸릴 수 있으니 귓털을 수시로 정리해주고 털이 자라지 않도록 손질을 해 주어야 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="장"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="피부와 장이 약한 편이라 특히 신경을 써 주어야 합니다. 치매에 걸릴 확률도 다른 종에 비해 높아서 생선을 자주 먹이는 것이 좋다고 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="산책"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="사냥견 혈통으로 활동성이 큰 견종이기 때문에 하루에 2시간 이상씩은 산책을 해주는 것이 좋습니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

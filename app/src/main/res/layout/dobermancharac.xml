@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/domermancharac">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="위염전"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:textAlignment="inherit"
+                        android:text="위염전은 가슴이 넓은 견종에서 발생하기 쉬운 것으로 알려져 있으며, 도베르만 같은 체형에서 특히 발생하기 쉬운 질병입니다. 위를 고정하고 있는 조직이 비틀림으로써 발생하는 이 질병은 식후 운동이나 과도한 음식 섭취로도 잘 발병한다고 알려져 있습니다. 운동은 식사 전에 하고, 건식품을 많이 먹은 후 수분을 한 번에 섭취하면 뱃속에서 크게 부풀어 올라 부담이 되므로 주의 하세요."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="고관절 형성 부전"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="고관절 형성 부전은 유전적 소인이 강하므로 어미개 또는 조부모견 등에 발병견이 있는 경우는 더욱 주의해야 합니다. 1~3살 정도에 발병하는 경우가 많고, 운동을 제한할 필요없이 적당한 관리만 필요한  정도부터 보행이 곤란한 정도까지 증상의 정도가 다르며 심각한 경우에는 수술이 필요합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac"/>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="운동"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="특유의 아름다운 근육질 육체는 충분한 운동을 통해 유지할 수 있습니다. 운동이 부족하면 욕구 불만 등의 스트레스로 인해 파괴적인 행동을 하거나, 지시에  따르지 않는 등 불만을 표현할 수 있습니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="외로움"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="도베르만은 외로움을 잘 타기 때문에 주인과 떨어져있는 시간이 길고 혼자인 시간이 길면 무기력증에 걸리고 허약해 질 수 있습니다. "
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

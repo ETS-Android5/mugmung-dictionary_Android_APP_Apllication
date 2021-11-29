@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pomecharac">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="질병"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:textAlignment="inherit"
+                        android:text="슬개골의 탈구, 피부병, 눈질환과 호르몬 불균형 등의 질환에 주의해주어야 하며 고체온의 위험이 있으므로 더운 여름철에는 운동이나 외출을 삼가하도록 유의해야 합니다. 적절한 운동과 좋은 식습관을 길들인다면 건강문제는 거의 없습니다. 미끄러지지 않도록 바닥에 매트를 꼭 깔아주시고, 높은곳에서 뛰어내리는 행동을 하지 않도록 주의해주세요."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="흑피병"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="포메라니안은 건강 탈모증과 과다색소침착(피부가 어두워짐)을 동반하는 흑피병 이라 부르는 피부병에 걸릴 수 있습니다. 양모증, 펑크털, 가성 쿠싱병, 심한 탈모증 등의 이름으로 불리기도합니다.특히 습한 여름은 털이 많은 포메라니안에게 피부병을 유발시킵니다. 따라서 서늘한 환경을 유지해주어야 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac"/>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="기관허탈"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="기관허탈은 호흡기관의 기관륜 약화로 인해 발병합니다. 증상은 거위와 비슷한 울음소리를 내며 운동, 흥분, 더운 날씨가 계속되면 상태가 악화된 기침을 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

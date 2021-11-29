@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maltisecharac">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="관절"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textAlignment="inherit"
+                        android:layout_marginRight="10dp"
+                        android:text="말티즈는 관절이 약하게 타고나 늘 조심해야 하며, 걸음걸이가 이상하다 느껴지면 대게는 관절에 무리가 생긴 경우가 많습니다. 슬개골이 탈구되는 문제는 고령의 말티즈가 고질적으로 앓는 질환이기도 하니 주인의 세심한 관심이 필요합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="훈련"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="가끔씩 어린아이들을 자신의 라이벌로 생각하고 깨물거나 짖는 경우가 있으니 적절한 훈련이 필요합니다. 응석을 받아주기 시작하면 버릇없는 개가 되기 쉬우므로 사람이 자신보다 위의 존재라는 것을 잘 교육시키는 것이 필요합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac"/>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="긴 털"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="긴 털로 눈과 귀가 덮혀있기 때문에 눈을 가리거나 찔릴 염려가 있어 눈에 염증이 생기기 쉬우며 공기가 잘 통하지 않아 귓병에 잘 걸릴 수 있습니다. 평소에도 자주 귀청소를 해주어야 하며 눈전용 세정액을 넣어서 염증이 생기지 않도록 주의해야 합니다. "
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="유전병"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:text="소형견으로 개량되면서 생겨난 유전병인 유루증이 있습니다. 눈물의 양이 많은 만큼 눈곱도 많이 끼므로 매일 눈 주위를 닦아주거나 눈 주변 털 길이가 길어지면 가위 등으로 털을 잘라주는 관리가 필요합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

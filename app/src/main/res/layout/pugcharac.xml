@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pugcharac">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="visible"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="퍼그 뇌염"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="7dp"
+                        android:textAlignment="inherit"
+                        android:text="발생하기 쉬운 질병으로 갑자기 경련을 일으키며 쓰러지는 퍼그 뇌염이 있습니다. 간질과 증상이 매우 비슷하지만 휘청거림, 선회 등의 증상도 있습니다. 퍼그는 종종 헥헥 거리며 호흡합니다만, 너무 심한 경우나 횟수가 많을 경우 보기에도 괴로워 보이는 경우는 반드시 검사를 받아 보아야 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="식탐"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="식탐과 고집이 매우 쎈 강아지 입니다. 식탐이 아주 심하기 때문에 관리를 잘 해야 합니다. 쉽게 비만이 되고 비만은 각종 질병들을 유발하기 때문에 식단관리는 처음부터 꼭 신경써야 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac"/>
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="산책"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="매일 가벼운 산책에 데리고나가 적당한 운동을 시킬 필요가 있습니다. 더위와 추위에 매우 약하며 여름엔 열사병에 걸리기 쉽기 때문에 주의해야 합니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="안구돌출"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="특별한 충격이나 사고가 없었음에도 안구도출 혹은 안구탈출 증상이 나타난다면 동물병원에 데리고 가는것이 좋습니다. 그냥 두게 된다면 포도막염, 각막궤양, 녹내장 등의 2차적인 손상이 일어날 수  있습니다. "
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/charac" />
+
+                        <TextView
+                            android:id="@+id/txt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="농피증"
+                            android:textSize="17dp"
+                            android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="7dp"
+                        android:text="얼굴이나 몸의 주름 속을 꺠끗하게 관리하지 않으면 비듬이나 피지 등의 노폐물과 먼지가 쌓입니다. 젖은 수건으로 닦아주면 됩니다. 먼지가 쌓여서 균이 번식하고 염증을 일으키는 것이 농피증입니다. 특히 봄부터 가을에 걸쳐 고온 다습한 시기에 발생하기 쉽고 치료에 시간이 걸립니다."
+                        android:textSize="13dp"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="@font/gmarkersansttfmedium"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
