@@ -99,21 +99,9 @@ public class Regist extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_regist);
-
-
-        //액션 바 등록하기
-        //  ActionBar actionBar = getSupportActionBar();
-        //  actionBar.setTitle("Create Account");
-
-        //  actionBar.setDisplayHomeAsUpEnabled(true); //뒤로가기버튼
-        // actionBar.setDisplayShowHomeEnabled(true); //홈 아이콘
-
-        //파이어베이스 접근 설정
-        // user = firebaseAuth.getCurrentUser();
         firebaseAuth =  FirebaseAuth.getInstance();
-        //firebaseDatabase = FirebaseDatabase.getInstance().getReference();
-
         mEmailText = findViewById(R.id.emailEt);
         mPasswordText = findViewById(R.id.passwordEdt);
         mPasswordcheckText = findViewById(R.id.passwordcheckEdt);
@@ -142,10 +130,6 @@ public class Regist extends AppCompatActivity {
         Dataref  = FirebaseDatabase.getInstance().getReference("Users");
         StorageRef = FirebaseStorage.getInstance().getReference().child("dogImage");
 
-        //   FirebaseUser user = firebaseAuth.getCurrentUser();
-
-        //파이어베이스 user 로 접글
-
         layout = findViewById(R.id.layout);
 
         dogimage.setOnClickListener(new View.OnClickListener() {
@@ -168,9 +152,6 @@ public class Regist extends AppCompatActivity {
             public void onClick(View v) {
 
                 final String imageName = dogtype.getText ().toString ();
-                // if(isImageAdded != false && imageName!=null) {
-                // uploadImage(imageName);
-                // }
 
                 //가입 정보 가져오기
                 final String email = mEmailText.getText().toString().trim();
@@ -344,29 +325,6 @@ public class Regist extends AppCompatActivity {
 
     }
 
-    /*  private void uploadImage(final String imageName) {
-          String key = Dataref.push().getKey();
-          StorageRef.child(key + ".jpg").putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-              @Override
-              public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                  StorageRef.child(key + ".jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                      @Override
-                      public void onSuccess(Uri uri) {
-                          HashMap hashMap = new HashMap();
-                          hashMap.put("CarName", imageName);
-                          hashMap.put("ImageUrl", uri.toString());
-
-                          Dataref.child(uid).setValue(hashMap).addOnSuccessListener(new OnSuccessListener<Void>() {
-                              @Override
-                              public void onSuccess(Void aVoid) {
-                                  Toast.makeText(Regist.this, "Data Successfully Uploaded!", Toast.LENGTH_SHORT).show();
-                              }
-                          });
-                      }
-                  });
-              }
-          });
-      }*/
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // 카메라를 다루지 않기 때문에 앨범 상수에 대해서 성공한 경우에 대해서만 처리
         super.onActivityResult(requestCode, resultCode, data);
