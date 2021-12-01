@@ -58,8 +58,8 @@ public class Realtime_Recognition_yolo extends AppCompatActivity implements Came
 
             if (firstTimeYolo == false){
                 firstTimeYolo = true;
-                String tinyYoloCfg = getPath("best.cfg",this);
-                String tinyYoloWeights = getPath("best.weights",this);
+                String tinyYoloCfg = getPath("Realtime_Yolo_Model_Layer.cfg",this);
+                String tinyYoloWeights = getPath("Realtime_Yolo_Model_Weights.weights",this);
                 tinyYolo = Dnn.readNetFromDarknet(tinyYoloCfg, tinyYoloWeights);
             }
         }
