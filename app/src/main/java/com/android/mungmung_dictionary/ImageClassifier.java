@@ -87,7 +87,7 @@ public class ImageClassifier {
         MappedByteBuffer classifierModel = FileUtil.loadMappedFile(activity,
                 "Dog_Breed_Classification_Model.tflite");
         // labels.txt 파일 불러오기
-        labels = FileUtil.loadLabels(activity, "Dog_Breed_Classification_Label.txt");
+        labels = FileUtil.loadLabels(activity, "Dog_Breed_Classification_Model_Label.txt");
 
         // TensorFlow Lite 모델 파일 로딩
         tensorClassifier = new Interpreter(classifierModel, null);
