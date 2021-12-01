@@ -2,7 +2,7 @@
 
 ### Main Function
 - Dog Breed Classification
-- Real-time detection of food that dogs need to watch out for
+- Real-time detection of food that dogs need to watch out 
 - Feed is recommend according to the allergic reaction.
 - It scans the brand name of the feed and shows the list of feed for that brand.
 ### Tech 
