@@ -71,7 +71,6 @@ public class BottomActivity extends AppCompatActivity {
                 return true;
             }
         });
-
     }
 
     public void replaceFragment(Fragment fragment) {
