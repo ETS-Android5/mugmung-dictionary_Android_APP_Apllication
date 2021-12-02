@@ -9,3 +9,6 @@
 - CNN Alexnet algorithmn
 - Yolov3
 - Google Cloud Vision API OCR
+### Requirements
+- Android Studio Minimum SDK API 21
+- OpenCV Version 3.4.5  
