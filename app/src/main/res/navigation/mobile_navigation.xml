@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.android.mungmung_dictionary.ui.home.HomeFragment"
+        android:name="com.android.mungmung_dictionary.ui.Brand_List.Brand_List"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/ui_brand_list" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.android.mungmung_dictionary.ui.Food.FoodFragment"
+        android:name="com.android.mungmung_dictionary.ui.Snack.Dog_Snack"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/ui_snack" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.android.mungmung_dictionary.ui.My.MyFragment"
+        android:name="com.android.mungmung_dictionary.ui.My_Dog_Information.My_Dog_Information"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_my" />
+        tools:layout="@layout/ui_my_dog_information" />
 </navigation>

@@ -5,6 +5,8 @@
       <map>
         <entry key="..\:/android_project/app/src/main/res/layout/activity_bottom.xml" value="0.25181159420289856" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_feed.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/activity_feed_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/activity_function_list.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_ocr.xml" value="0.29347826086956524" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_ocr_process.xml" value="0.25181159420289856" />
@@ -12,7 +14,51 @@
         <entry key="..\:/android_project/app/src/main/res/layout/activity_ocrfeed.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_ocrtest.xml" value="0.25181159420289856" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_realtime_recognition_yolo.xml" value="0.25181159420289856" />
+        <entry key="..\:/android_project/app/src/main/res/layout/activity_regist.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/activity_test.xml" value="0.29347826086956524" />
+        <entry key="..\:/android_project/app/src/main/res/layout/beaglecharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/bishongcharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dakshuntcharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dobermancharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dog_Food_Description.xml" value="0.32151898734177214" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dog_food_brand_list_fragment_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dog_food_description_fragment_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/dog_food_judgment_fragment_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/feed_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_dashboard.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_descfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_feed.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_my.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_recfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/fragment_yesno.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/goldenchacracter.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/kogicharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/listview_layout.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/maltisecharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/pomecharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/pugcharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/shunauzercharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/sibacharac.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singledesign.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singledesign2.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singledesign3.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singlerowdesign.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singlerowdesign2.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/singlerowdesign3.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/tab_dryfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/tab_nofragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/tab_wetfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/tab_yesfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_description.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_description_dry.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_description_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_allergy.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_description.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_dry.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_food_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_home_dog_food_bran_list.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>
