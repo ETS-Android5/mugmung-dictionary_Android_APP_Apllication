@@ -1,9 +1,5 @@
 package com.android.mungmung_dictionary;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -13,6 +9,10 @@ import android.os.Environment;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -49,7 +49,6 @@ public class Realtime_Recognition_yolo extends AppCompatActivity implements Came
     boolean firstTimeYolo = false;
     private final int MY_PERMISSIONS_REQUEST_CAMERA=1001;
     Net tinyYolo;
-    ///////////////////////////////////  YOLO  액티비티   ///////////////////////////////////////////////////
 
     public void YOLO(View Button){
 
@@ -66,9 +65,6 @@ public class Realtime_Recognition_yolo extends AppCompatActivity implements Came
         else{
             startYolo = false;
         }
-
-
-
 
     }
     private static String getPath(String file, Context context) {
@@ -112,13 +108,6 @@ public class Realtime_Recognition_yolo extends AppCompatActivity implements Came
 
             }
         }
-
-
-
-
-
-
-
         cameraBridgeViewBase = (JavaCameraView)findViewById(R.id.CameraView);
         cameraBridgeViewBase.setVisibility(SurfaceView.VISIBLE);
         cameraBridgeViewBase.setCvCameraViewListener(this);
