@@ -55,7 +55,7 @@ public class OCR_Process extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ocr_result);
+        setContentView(R.layout.activity_ocr_process);
         ActionBar actionBar = getSupportActionBar();
 
         mResultEt = findViewById(R.id.resultEt);
