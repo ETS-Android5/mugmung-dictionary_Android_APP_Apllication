@@ -1,14 +1,14 @@
 package com.android.mungmung_dictionary;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -33,7 +33,6 @@ public class OCR_Result extends AppCompatActivity {
 
     FirebaseStorage storage = FirebaseStorage.getInstance("gs://mungmung-e8fb3.appspot.com");
     StorageReference storageRef = storage.getReference();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +64,7 @@ public class OCR_Result extends AppCompatActivity {
                         String feedbrandname = snapshot.child ( brandname2+"name" ).getValue (String.class);
                         //브랜드 정보
                         String feedinfo = snapshot.child( brandname2+"info" ).getValue (String.class);
-                        //브랜드 로고
-                        //String feedlogo = snapshot.child ( brandname2+"brand" ).getValue (String.class);
+
 
                         storageRef.child("로고").child(brandname2+".jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
