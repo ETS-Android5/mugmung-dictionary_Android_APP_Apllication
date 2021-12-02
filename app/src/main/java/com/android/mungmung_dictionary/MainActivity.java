@@ -31,13 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         firebaseAuth =  FirebaseAuth.getInstance();
-
         mResigettxt = findViewById(R.id.register_t2);
         mLoginBtn = findViewById(R.id.login_btn);
         mEmailText = findViewById(R.id.emailEt);
         mPasswordText = findViewById(R.id.passwordEdt);
-
-
 
         mResigettxt.setOnClickListener(new View.OnClickListener(){
 
