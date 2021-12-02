@@ -93,8 +93,4 @@
             <!--Add insert image button in actionbar menu-->
         </LinearLayout>
     </ScrollView>
-
-
-
-
 </RelativeLayout>
