@@ -8,7 +8,6 @@
     android:orientation="vertical"
     tools:context=".OCR_Result">
 
-
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
@@ -171,11 +170,7 @@
                         android:text="top1 name" />
 
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
     </ScrollView>
-
-
 </LinearLayout>
