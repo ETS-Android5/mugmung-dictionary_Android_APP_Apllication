@@ -23,7 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class ImageClassifier {
+public class Dog_Breed_Classification {
 
     /**
      * Quantized MobileNet models requires additional dequantization to the output probability.
@@ -80,7 +80,7 @@ public class ImageClassifier {
      * @param activity the current activity
      * @throws IOException
      */
-    public ImageClassifier(Activity activity) throws IOException {
+    public Dog_Breed_Classification(Activity activity) throws IOException {
         /*
          *  이미지 분류 TensorFlow Lite 모델 불러오기
          */
