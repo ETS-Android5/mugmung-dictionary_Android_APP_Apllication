@@ -1,8 +1,5 @@
 package com.android.mungmung_dictionary;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -22,10 +19,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.mungmung_dictionary.ui.My.MyFragment;
-import com.android.mungmung_dictionary.ui.feed.DrytabFragment;
-import com.android.mungmung_dictionary.ui.feed.FeedFragment;
-import com.android.mungmung_dictionary.ui.feed.recfragment;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.mungmung_dictionary.ui.Description.Dog_Food_Allergy;
+import com.android.mungmung_dictionary.ui.Description.Dog_Food_Dry;
+import com.android.mungmung_dictionary.ui.Description.Dog_Food;
+import com.android.mungmung_dictionary.ui.My_Dog_Information.My_Dog_Information;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -241,10 +241,10 @@ public class Regist extends AppCompatActivity {
                                 hashMap.put("bean",bean);
 
                                 //fragment로 데이터 넘겨줌
-                                MyFragment fragment = new MyFragment();
-                                recfragment regfragment = new recfragment();
-                                FeedFragment feedFragment = new FeedFragment();
-                                DrytabFragment drytabFragment = new DrytabFragment();
+                                My_Dog_Information fragment = new My_Dog_Information();
+                                Dog_Food_Allergy regfragment = new Dog_Food_Allergy();
+                                Dog_Food dogFoodMain = new Dog_Food();
+                                Dog_Food_Dry dogFoodDry = new Dog_Food_Dry();
 
                                 Bundle bundle = new Bundle();
                                 bundle.putString("email",email);
@@ -265,8 +265,8 @@ public class Regist extends AppCompatActivity {
                                 bundle.putString("bean",bean);
                                 fragment.setArguments(bundle);
                                 regfragment.setArguments(bundle);
-                                feedFragment.setArguments(bundle);
-                                drytabFragment.setArguments(bundle);
+                                dogFoodMain.setArguments(bundle);
+                                dogFoodDry.setArguments(bundle);
 
                                 String key = Dataref.push().getKey();
                                 StorageRef.child(uid + ".jpg").putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

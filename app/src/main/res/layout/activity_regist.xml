@@ -35,16 +35,6 @@
         android:layout_marginTop="10dp"
         android:text="강아지 종"
         android:fontFamily="@font/gmarkersansttfmedium"/>
-   <!-- <ListView
-        android:id="@+id/lv_probabilities"
-        android:layout_width="397dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|right"
-        android:divider="@null"
-        android:dividerHeight="0dp">
-
-    </ListView> -->
-
 
     <EditText
         android:id="@+id/dog_age"
