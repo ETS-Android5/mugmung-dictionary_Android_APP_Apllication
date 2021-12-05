@@ -45,10 +45,12 @@
         <activity
             android:name="com.android.mungmung_dictionary.Realtime_Recognition_yolo"
             android:exported="false" />
-        <activity android:name="com.android.mungmung_dictionary.FeedActivity" />
+        <activity android:name="com.android.mungmung_dictionary.Feed_List" />
         <activity
-            android:name="com.android.mungmung_dictionary.BottomActivity"
+            android:name="com.android.mungmung_dictionary.Function_List"
             android:label="@string/title_activity_bottom" />
+        <activity android:name="com.android.mungmung_dictionary.OCR_Process"/>
+        <activity android:name="com.android.mungmung_dictionary.OCR_Result"/>
         <activity android:name="com.android.mungmung_dictionary.Regist" />
         <activity android:name="com.android.mungmung_dictionary.MainActivity">
             <intent-filter>
