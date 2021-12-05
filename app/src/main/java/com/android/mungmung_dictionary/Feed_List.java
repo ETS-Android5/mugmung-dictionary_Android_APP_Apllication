@@ -5,16 +5,15 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.mungmung_dictionary.R;
-import com.android.mungmung_dictionary.ui.feed.recfragment;
+import com.android.mungmung_dictionary.ui.Description.Dog_Food_Allergy;
 
-public class FeedActivity extends AppCompatActivity {
+public class Feed_List extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
-        setContentView ( R.layout.feed_main );
+        setContentView ( R.layout.activity_feed_list);
         getWindow ().setFlags ( WindowManager.LayoutParams.FLAG_FULLSCREEN , WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
-        getSupportFragmentManager ().beginTransaction ().replace ( R.id.wrapper , new recfragment () ).commit ();
+        getSupportFragmentManager ().beginTransaction ().replace ( R.id.wrapper , new Dog_Food_Allergy() ).commit ();
     }
 }
