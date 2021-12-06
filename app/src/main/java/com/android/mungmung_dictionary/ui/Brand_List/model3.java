@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.home;
+package com.android.mungmung_dictionary.ui.Brand_List;
 
 public class model3 {
     String BrandImage;
