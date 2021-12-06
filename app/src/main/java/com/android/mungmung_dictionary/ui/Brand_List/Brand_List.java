@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.home;
+package com.android.mungmung_dictionary.ui.Brand_List;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,12 +13,12 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.denzcoskun.imageslider.ImageSlider;
-import com.denzcoskun.imageslider.models.SlideModel;
-import com.android.mungmung_dictionary.BottomActivity;
+import com.android.mungmung_dictionary.Function_List;
 import com.android.mungmung_dictionary.OCR_Process;
 import com.android.mungmung_dictionary.R;
-import com.android.mungmung_dictionary.databinding.FragmentHomeBinding;
+import com.android.mungmung_dictionary.databinding.UiBrandListBinding;
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,10 +28,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeFragment extends Fragment{
+public class Brand_List extends Fragment{
 
     private HomeViewModel homeViewModel;
-    private FragmentHomeBinding binding;
+    private UiBrandListBinding binding;
 
     RecyclerView recview;
     myadapter3 adpter;
@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment{
     FirebaseUser user = mAuth.getCurrentUser();
     DatabaseReference mDatabase=database.getReference();
 
-    public HomeFragment(){
+    public Brand_List(){
 
     }
 
@@ -50,7 +50,6 @@ public class HomeFragment extends Fragment{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
-        setContentView(R.layout.activity_main);
 
     }
 
@@ -60,16 +59,14 @@ public class HomeFragment extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View view=inflater.inflate( R.layout.fragment_home,container, false);
+        View view=inflater.inflate( R.layout.ui_brand_list,container, false);
 
         Button btn_ocr=(Button)view.findViewById(R.id.btn_ocr);
-        btn_ocr.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), OCR_Process.class);
-                startActivity(intent);
-            }
-        });
+
+
+
+
+
 
         ImageSlider imageSlider = (ImageSlider) view.findViewById(R.id.slider);
 
@@ -96,6 +93,16 @@ public class HomeFragment extends Fragment{
         adpter = new myadapter3 ( options );
         recview.setAdapter ( adpter );
 
+
+        btn_ocr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), OCR_Process.class);
+                startActivity(intent);
+            }
+        });
+
+
         return view;
 
     }
@@ -112,7 +119,7 @@ public class HomeFragment extends Fragment{
         super.onResume ();
         FragmentActivity activity = getActivity ();
         if(activity != null){
-            ((BottomActivity) activity).setActionBarTitle ( "Home" );
+            ((Function_List) activity).setActionBarTitle ( "Home" );
         }
     }
 
