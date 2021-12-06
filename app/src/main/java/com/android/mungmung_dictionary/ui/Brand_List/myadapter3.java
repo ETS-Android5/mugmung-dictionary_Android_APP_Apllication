@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.home;
+package com.android.mungmung_dictionary.ui.Brand_List;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +34,7 @@ public class myadapter3 extends FirebaseRecyclerAdapter<model3, myadapter3.myvie
     @NonNull
     @Override
     public myadapter3.myviewholder onCreateViewHolder(@NonNull ViewGroup parent , int viewType) {
-        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.singlerowdesign3, parent, false );
+        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.dog_food_brand_list_fragment_view, parent, false );
         return new myadapter3.myviewholder ( view );
     }
 
