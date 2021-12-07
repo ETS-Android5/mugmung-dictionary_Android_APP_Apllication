@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.Food;
+package com.android.mungmung_dictionary.ui.Snack;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,24 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.mungmung_dictionary.BottomActivity;
+import com.android.mungmung_dictionary.Function_List;
 import com.android.mungmung_dictionary.R;
-import com.android.mungmung_dictionary.databinding.FragmentDashboardBinding;
+import com.android.mungmung_dictionary.databinding.UiSnackBinding;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class FoodFragment extends Fragment {
+public class Dog_Snack extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
-    private FragmentDashboardBinding binding;
+    private UiSnackBinding binding;
 
     private RecyclerView recyclerView;
     ExpandableListView listMain;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view=inflater.inflate( R.layout.fragment_dashboard,container, false);
+        View view=inflater.inflate( R.layout.ui_snack,container, false);
 
 
 
@@ -524,7 +524,7 @@ public class FoodFragment extends Fragment {
         super.onResume ();
         FragmentActivity activity = getActivity ();
         if(activity != null){
-            ((BottomActivity) activity).setActionBarTitle ( "Food" );
+            ((Function_List) activity).setActionBarTitle ( "Food" );
         }
     }
 }
