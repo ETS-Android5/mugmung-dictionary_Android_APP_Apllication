@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.My;
+package com.android.mungmung_dictionary.ui.My_Dog_Information;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
