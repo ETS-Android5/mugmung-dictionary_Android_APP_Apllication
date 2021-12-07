@@ -50,7 +50,9 @@
         <entry key="..\:/android_project/app/src/main/res/layout/tab_nofragment.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/tab_wetfragment.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/tab_yesfragment.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_brand_list.xml" value="0.3111413043478261" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_description.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_description_allergy.xml" value="0.3645833333333333" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_description_dry.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_description_main.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_allergy.xml" value="0.36614583333333334" />
@@ -59,6 +61,7 @@
         <entry key="..\:/android_project/app/src/main/res/layout/ui_dog_food_main.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_food_main.xml" value="0.36614583333333334" />
         <entry key="..\:/android_project/app/src/main/res/layout/ui_home_dog_food_bran_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/android_project/app/src/main/res/layout/ui_snack.xml" value="0.3645833333333333" />
       </map>
     </option>
   </component>
