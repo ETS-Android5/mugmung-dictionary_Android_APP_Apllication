@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.My;
+package com.android.mungmung_dictionary.ui.My_Dog_Information;
 
 import android.content.Context;
 import android.net.Uri;
@@ -16,10 +16,10 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
-import com.bumptech.glide.Glide;
-import com.android.mungmung_dictionary.BottomActivity;
+import com.android.mungmung_dictionary.Function_List;
 import com.android.mungmung_dictionary.R;
-import com.android.mungmung_dictionary.databinding.FragmentMyBinding;
+import com.android.mungmung_dictionary.databinding.UiMyDogInformationBinding;
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -32,10 +32,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class MyFragment extends Fragment {
+public class My_Dog_Information extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
-    private FragmentMyBinding binding;
+    private UiMyDogInformationBinding binding;
 
     ImageView dogimage;
     TextView dogtype, dogage, email, dogweight, name, carecheck, mungname;
@@ -61,7 +61,7 @@ public class MyFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        ViewGroup rootview = (ViewGroup)inflater.inflate(R.layout.fragment_my,container,false);
+        ViewGroup rootview = (ViewGroup)inflater.inflate(R.layout.ui_my_dog_information,container,false);
 
         dogage = rootview.findViewById(R.id.dog_age);
         dogtype = rootview.findViewById(R.id.txttype);
@@ -178,78 +178,78 @@ public class MyFragment extends Fragment {
 
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.goldenchacracter,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_goldenchacracter,contentsLayout,true);
 
                         }
                         else if(breed.equals("말티즈")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.maltisecharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_maltisecharac,contentsLayout,true);
                         }
                         else if(breed.equals("비숑")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.bishongcharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_bishongcharac,contentsLayout,true);
                         }
                         else if(breed.equals("치와와")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.chiwawacharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_chiwawacharac,contentsLayout,true);
                         }
                         else if(breed.equals("닥스훈트")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.dakshuntcharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_dakshuntcharac,contentsLayout,true);
                         }
                         else if(breed.equals("달마시안")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.dalmasiancharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_dalmasiancharac,contentsLayout,true);
                         }
                         else if(breed.equals("도베르만")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.dobermancharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_dobermancharac,contentsLayout,true);
                         }
                         else if(breed.equals("시베리안 허스키")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.huskeycharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_huskeycharac,contentsLayout,true);
                         }
                         else if(breed.equals("포메라니안")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.pomecharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_pomecharac,contentsLayout,true);
                         }
                         else if(breed.equals("푸들")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.poodlecharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_poodlecharac,contentsLayout,true);
                         }
                         else if(breed.equals("퍼그")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.pugcharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_pugcharac,contentsLayout,true);
                         }
                         else if(breed.equals("슈나우저")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.shunauzercharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_shunauzercharac,contentsLayout,true);
                         }
                         else if(breed.equals("시바견")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.sibacharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_sibacharac,contentsLayout,true);
                         }
                         else if(breed.equals("웰시코기")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.kogicharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_kogicharac,contentsLayout,true);
                         }
                         else if(breed.equals("비글")){
                             LinearLayout contentsLayout = (LinearLayout) rootview.findViewById(R.id.layoutppp);
                             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            inflater.inflate(R.layout.beaglecharac,contentsLayout,true);
+                            inflater.inflate(R.layout.ui_my_dog_information_beaglecharac,contentsLayout,true);
                         }
 
                         storageRef.child("dogImage").child(uid+".jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -291,7 +291,7 @@ public class MyFragment extends Fragment {
         super.onResume ();
         FragmentActivity activity = getActivity ();
         if(activity != null){
-            ((BottomActivity) activity).setActionBarTitle ( "My" );
+            ((Function_List) activity).setActionBarTitle ( "My" );
         }
     }
 
