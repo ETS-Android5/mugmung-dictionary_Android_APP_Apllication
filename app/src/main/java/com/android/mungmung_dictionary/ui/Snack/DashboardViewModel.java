@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.Food;
+package com.android.mungmung_dictionary.ui.Snack;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
