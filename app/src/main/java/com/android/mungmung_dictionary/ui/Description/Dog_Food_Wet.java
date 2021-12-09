@@ -1,12 +1,6 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,8 +9,13 @@ import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.PopupMenu;
 
-import com.bumptech.glide.load.model.Model;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.mungmung_dictionary.R;
+import com.bumptech.glide.load.model.Model;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -31,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-public class WettabFragment extends Fragment {
+public class Dog_Food_Wet extends Fragment {
 
     RecyclerView Wetrecview;
     myadapter adpter;
@@ -50,7 +49,7 @@ public class WettabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.tab_wetfragment, container, false);
+        View view = inflater.inflate(R.layout.ui_description_wet, container, false);
 
         Wetrecview = (RecyclerView)view.findViewById ( R.id.Wetrecview );
         Wetrecview.setLayoutManager ( new LinearLayoutManager( getContext () ) );
