@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class recfragment extends Fragment {
+public class Dog_Food_Allergy extends Fragment {
     RecyclerView recview;
     myadapter adpter;
 
@@ -29,14 +29,14 @@ public class recfragment extends Fragment {
     FirebaseUser user = mAuth.getCurrentUser();
     DatabaseReference mDatabase=database.getReference();
 
-    public recfragment(){
+    public Dog_Food_Allergy(){
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater ,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate ( R.layout.fragment_recfragment, container, false );
+        View view = inflater.inflate ( R.layout.ui_description_allergy, container, false );
 
         recview = (RecyclerView)view.findViewById ( R.id.recview );
         recview.setLayoutManager ( new LinearLayoutManager ( getContext () ) );

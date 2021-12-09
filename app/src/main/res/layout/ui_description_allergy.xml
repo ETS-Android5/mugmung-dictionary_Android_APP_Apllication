@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.feed.recfragment">
+    tools:context=".ui.Description.Dog_Food_Allergy">
 
 
     <androidx.recyclerview.widget.RecyclerView
