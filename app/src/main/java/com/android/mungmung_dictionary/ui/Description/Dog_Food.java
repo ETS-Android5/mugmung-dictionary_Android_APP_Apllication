@@ -1,6 +1,9 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -10,13 +13,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.bumptech.glide.load.model.Model;
-import com.android.mungmung_dictionary.BottomActivity;
+import com.android.mungmung_dictionary.Function_List;
 import com.android.mungmung_dictionary.R;
+import com.bumptech.glide.load.model.Model;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -28,7 +27,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-public class FeedFragment extends Fragment {
+public class Dog_Food extends Fragment {
 
     RecyclerView recview;
     myadapter adpter;
@@ -53,7 +52,7 @@ public class FeedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view=inflater.inflate(R.layout.fragment_feed,null);
+        View view=inflater.inflate(R.layout.ui_description,null);
 
         mViewPager = (ViewPager)view.findViewById(R.id.viewPager);
 
@@ -63,7 +62,7 @@ public class FeedFragment extends Fragment {
         tabLayout.setTabGravity ( TabLayout.GRAVITY_FILL );
 
         final ViewPager viewpager = (ViewPager)view.findViewById ( R.id.viewPager );
-        final FeedFragment.PagerAdapter adapter = new FeedFragment.PagerAdapter( getChildFragmentManager (), tabLayout.getTabCount () );
+        final Dog_Food.PagerAdapter adapter = new Dog_Food.PagerAdapter( getChildFragmentManager (), tabLayout.getTabCount () );
         viewpager.setAdapter ( adapter );
         viewpager.addOnPageChangeListener ( new TabLayout.TabLayoutOnPageChangeListener ( tabLayout ) );
         tabLayout.setOnTabSelectedListener ( new TabLayout.OnTabSelectedListener () {
@@ -94,7 +93,7 @@ public class FeedFragment extends Fragment {
         super.onResume ();
         FragmentActivity activity = getActivity ();
         if(activity != null){
-            ((BottomActivity) activity).setActionBarTitle ( "Feed" );
+            ((Function_List) activity).setActionBarTitle ( "Feed" );
         }
     }
 
@@ -113,10 +112,10 @@ public class FeedFragment extends Fragment {
 
             switch (position){
                 case 0:
-                    DrytabFragment tab1 = new DrytabFragment();
+                    Dog_Food_Dry tab1 = new Dog_Food_Dry();
                     return tab1;
                 case 1:
-                    WettabFragment tab2 = new WettabFragment();
+                    Dog_Food_Wet tab2 = new Dog_Food_Wet();
                     return tab2;
                 default:
                     return null;
