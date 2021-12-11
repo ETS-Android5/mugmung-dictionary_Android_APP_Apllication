@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 public class model {
     String brand,material,name,ingredients,profile;
