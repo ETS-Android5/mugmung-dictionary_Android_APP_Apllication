@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,7 +37,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model, myadapter.myviewho
             public void onClick(View view) {
                 AppCompatActivity activity = (AppCompatActivity)view.getContext ();
                 activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.frame_layout, //wrapper
-                        new descfragment (model.getName (), model.getBrand (), model.getMaterial (), model.getProfile (), model.getIngredients ()) ).addToBackStack ( null ).commit ();
+                        new Dog_Food_Detail_Description(model.getName (), model.getBrand (), model.getMaterial (), model.getProfile (), model.getIngredients ()) ).addToBackStack ( null ).commit ();
             }
         } );
     }
@@ -45,7 +45,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model, myadapter.myviewho
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent , int viewType) {
-        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.singlerowdesign, parent, false );
+        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.dog_food_description_fragment_view, parent, false );
         return new myviewholder ( view );
     }
 
