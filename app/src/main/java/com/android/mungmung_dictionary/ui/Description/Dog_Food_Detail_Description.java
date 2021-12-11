@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.feed;
+package com.android.mungmung_dictionary.ui.Description;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.bumptech.glide.Glide;
 import com.android.mungmung_dictionary.R;
 
-public class descfragment extends Fragment {
+public class Dog_Food_Detail_Description extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -24,11 +24,11 @@ public class descfragment extends Fragment {
     private String mParam2;
     String name, brand, material, purl, ingredients;
 
-    public descfragment(){
+    public Dog_Food_Detail_Description(){
 
     }
 
-    public descfragment(String name, String brand, String material, String purl, String ingredients){
+    public Dog_Food_Detail_Description(String name, String brand, String material, String purl, String ingredients){
         this.name = name;
         this.brand = brand;
         this.material = material;
@@ -37,8 +37,8 @@ public class descfragment extends Fragment {
     }
 
 
-    public static descfragment newInstance(String param1, String param2){
-        descfragment fragment = new descfragment ();
+    public static Dog_Food_Detail_Description newInstance(String param1, String param2){
+        Dog_Food_Detail_Description fragment = new Dog_Food_Detail_Description();
         Bundle args = new Bundle ();
         args.putString ( ARG_PARAM1, param1 );
         args.putString ( ARG_PARAM2, param2 );
@@ -59,12 +59,9 @@ public class descfragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater , @Nullable ViewGroup container , @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate ( R.layout.fragment_descfragment, container, false );
+        View view = inflater.inflate ( R.layout.ui_detail_description, container, false );
 
-        /*FirebaseRecyclerOptions<model> options =
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery( FirebaseDatabase.getInstance ().getReference ().child ( "Dry" ) , model.class)
-                        .build();*/
+
 
         ImageView imageholder = view.findViewById ( R.id.imagegholder );
         TextView nameholder = view.findViewById ( R.id.nameholder );
@@ -85,6 +82,6 @@ public class descfragment extends Fragment {
 
     public void onBackPressed(){
         AppCompatActivity activity = (AppCompatActivity)getContext ();
-        activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.frame_layout, new recfragment ()).addToBackStack ( null ).commit (); //R.id.wrapper
+        activity.getSupportFragmentManager ().beginTransaction ().replace ( R.id.frame_layout, new Dog_Food_Allergy()).addToBackStack ( null ).commit (); //R.id.wrapper
     }
 }
