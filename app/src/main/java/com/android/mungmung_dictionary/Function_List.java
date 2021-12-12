@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.android.mungmung_dictionary.ui.Description.Dog_Food;
-import com.android.mungmung_dictionary.ui.Dog_Food_Judgment.Dog_Food_harmfulness_Judgment;
+import com.android.mungmung_dictionary.ui.Dog_Food_Judgment.Dog_Food_harmful_or_not_Judgment;
 import com.android.mungmung_dictionary.ui.Snack.Dog_Snack;
 import com.android.mungmung_dictionary.ui.My_Dog_Information.My_Dog_Information;
 import com.android.mungmung_dictionary.ui.Brand_List.Brand_List;
@@ -26,7 +26,7 @@ public class Function_List extends AppCompatActivity {
     private Dog_Snack dogSnack = new Dog_Snack();
     private My_Dog_Information myDogInformation = new My_Dog_Information();
     private Dog_Food dogFoodMain = new Dog_Food();
-    private Dog_Food_harmfulness_Judgment dogFoodharmfulnessJudgment = new Dog_Food_harmfulness_Judgment();
+    private Dog_Food_harmful_or_not_Judgment dogFoodharmfulnessJudgment = new Dog_Food_harmful_or_not_Judgment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
