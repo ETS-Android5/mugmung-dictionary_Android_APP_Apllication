@@ -32,7 +32,6 @@ public class myadapter2 extends FirebaseRecyclerAdapter<model2, myadapter2.myvie
         Glide.with ( holder.Foodimage.getContext () ).load ( model.getFoodimage () ).into ( holder.Foodimage );
 
     }
-
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent , int viewType) {
