@@ -1,4 +1,4 @@
-package com.android.mungmung_dictionary.ui.yesno;
+package com.android.mungmung_dictionary.ui.Dog_Food_Judgment;
 
 public class model2 {
     String foodname, function, foodimage;
