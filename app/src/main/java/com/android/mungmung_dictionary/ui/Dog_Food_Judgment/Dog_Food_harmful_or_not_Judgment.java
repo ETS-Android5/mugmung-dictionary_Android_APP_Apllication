@@ -1,7 +1,11 @@
-package com.android.mungmung_dictionary.ui.yesno;
+package com.android.mungmung_dictionary.ui.Dog_Food_Judgment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -10,19 +14,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-
-import com.android.mungmung_dictionary.BottomActivity;
+import com.android.mungmung_dictionary.Function_List;
 import com.android.mungmung_dictionary.R;
 import com.android.mungmung_dictionary.Realtime_Recognition_yolo;
 import com.google.android.material.tabs.TabLayout;
 
 import org.jetbrains.annotations.NotNull;
 
-public class YesnoFragment extends Fragment {
+public class Dog_Food_harmful_or_not_Judgment extends Fragment {
 
     private ViewPager mViewPager;
 
@@ -33,7 +32,7 @@ public class YesnoFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view=inflater.inflate( R.layout.fragment_yesno,container, false);
+        View view=inflater.inflate( R.layout.ui_dog_food_judgment_harmfulness_judgment,container, false);
         mViewPager = (ViewPager)view.findViewById ( R.id.viewPager );
 
 
@@ -85,7 +84,7 @@ public class YesnoFragment extends Fragment {
         super.onResume ();
         FragmentActivity activity = getActivity ();
         if(activity != null){
-            ((BottomActivity) activity).setActionBarTitle ( "YesNo" );
+            ((Function_List) activity).setActionBarTitle ( "YesNo" );
         }
     }
 
@@ -106,10 +105,10 @@ public class YesnoFragment extends Fragment {
 
             switch (position){
                 case 0:
-                    FirstYesFragment tab1 = new FirstYesFragment();
+                    Dog_Food_Positive_Effect_List tab1 = new Dog_Food_Positive_Effect_List();
                     return tab1;
                 case 1:
-                    SecondNoFragment tab2 = new SecondNoFragment();
+                    Dog_Food_Negative_Effect_List tab2 = new Dog_Food_Negative_Effect_List();
                     return tab2;
                 default:
                     return null;
