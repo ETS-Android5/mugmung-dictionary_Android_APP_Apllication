@@ -32,7 +32,6 @@
 <img src="https://user-images.githubusercontent.com/62867182/146938441-9cb593b8-239b-439d-921a-396a137ab26a.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146938444-9c0c1848-aee1-4ee2-9255-8967f6af33e1.png" width=20% height=20%/>><img src="https://user-images.githubusercontent.com/62867182/146938796-5c986079-20e5-44d8-866d-b58faa3e877a.png" width=20% height=20%/>
 &nbsp;
 
-### 실시간 탐지 및 좋고 나쁜 음식 목록,간식 레시피
+### 실시간 탐지, 음식 효과 ,간식 레시피
 <img src="https://user-images.githubusercontent.com/62867182/146938023-b58d775f-392e-4b2e-8e84-8be245cd3ed3.PNG" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146940421-5ce9e783-fc2b-46de-8e10-d7461447ae57.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146940489-b9fbc714-9606-454f-a592-ed14f719ede9.png" width=20% height=20%/>
 &nbsp;
-
