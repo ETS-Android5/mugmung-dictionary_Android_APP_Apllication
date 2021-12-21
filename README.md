@@ -33,5 +33,6 @@
 &nbsp;
 
 ### 실시간 탐지, 음식 효과 ,간식 레시피
-<img src="https://user-images.githubusercontent.com/62867182/146938023-b58d775f-392e-4b2e-8e84-8be245cd3ed3.PNG" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146940421-5ce9e783-fc2b-46de-8e10-d7461447ae57.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146940489-b9fbc714-9606-454f-a592-ed14f719ede9.png" width=20% height=20%/>
+<img src="https://user-images.githubusercontent.com/62867182/146949773-12b1389a-7ac8-427d-8284-373bdb05eef3.gif" width=50% height=419/><img src="https://user-images.githubusercontent.com/62867182/146940421-5ce9e783-fc2b-46de-8e10-d7461447ae57.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146940489-b9fbc714-9606-454f-a592-ed14f719ede9.png" width=20% height=20%/>
 &nbsp;
+
