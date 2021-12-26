@@ -29,7 +29,7 @@
 
 
 ### 회원 가입시 선택한 알레르기 반응이 있는 음식의 성분을 제외한 사료 목록, 사료 세부 정보 
-<img src="https://user-images.githubusercontent.com/62867182/146938441-9cb593b8-239b-439d-921a-396a137ab26a.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146938444-9c0c1848-aee1-4ee2-9255-8967f6af33e1.png" width=20% height=20%/>><img src="https://user-images.githubusercontent.com/62867182/146938796-5c986079-20e5-44d8-866d-b58faa3e877a.png" width=20% height=20%/>
+<img src="https://user-images.githubusercontent.com/62867182/146938441-9cb593b8-239b-439d-921a-396a137ab26a.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146938444-9c0c1848-aee1-4ee2-9255-8967f6af33e1.png" width=20% height=20%/><img src="https://user-images.githubusercontent.com/62867182/146938796-5c986079-20e5-44d8-866d-b58faa3e877a.png" width=20% height=20%/>
 &nbsp;
 
 ### 실시간 탐지, 음식 효과 ,간식 레시피
